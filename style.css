@@ -34,3 +34,38 @@ display:flex;
 justify-content: space-between;
 align-items: center;
 }
+header .logo{
+    position:relative;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+header .toggle{
+    position:relative;
+    width: 40px;
+    height: 40px;
+    background: url(menu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .toggle:before{
+content: 'Menu';
+position: absolute;
+right: 45px;
+text-transform: uppercase;
+color:#fff;
+letter-spacing: 2px;
+font-size: 14px;
+padding:2px 5px;
+background:#fff;
+color:#111;
+}
