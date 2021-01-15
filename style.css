@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@200;300;400;500;600&display=swap');
 *{
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Dancing Script', cursive;
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
 section{
+    background-image: url("https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80");
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -91,4 +93,48 @@ color:#111;
     z-index: 1;
     box-shadow: 10px 0 15px rgba(0,0,0,0.1);
     transition:0.5s;
+    transition-delay: 1s;
+}
+section.active .glass{
+    width: 100%;
+    backdrop-filter: blur(20px);
+    transition-delay:0s;
+    box-shadow: 10px 0 15px rgba(0,0,0,0.5);
+}
+section.content{
+    position:relative;
+    z-index:10;
+    text-align:center;
+    transition:0.5s;
+    transition-delay:1s;
+}
+section.active .content{
+    opacity:0;
+    visibility:hidden;
+    transform:translateX(-200px);
+    transition-delay:0.s ;
+}
+section .content h2{
+    position:relative;
+    color:#fff;
+    font-size:10vw;
+    line-height:0.55em;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+section .content h2 span{
+    font-size: 0.2em;
+    font-weight:300;
+    letter-spacing:5px;
+    background:#fff;
+    color:#111;
+    padding: 0 10px;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+}
+section .sci{
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    display: flex;
+    z-index:100;
 }
