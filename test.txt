@@ -1,0 +1,2 @@
+A responsive design website page with the use of animation based on HTML, CSS and Javascript. 
+A small revision on how to achieve responsive web sites with a little bit of animation style.
