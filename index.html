@@ -10,9 +10,15 @@
     <section>
         <header>
             <a href="#" class="logo">Faith.</a>
-            <div class="toggle"></div>
+            <div class="toggle"onclick="menuToggle();"></div>
         </header>
-        <img src="images/motivation.jpg"></img>
+        <img src="images/believe.jpg"></img>
     </section>
+    <script type="text/javascript">
+    function menuToggle(){
+        const toggleMenu = document.querySelector('.toggle');
+        toggleMenu.classList.toggle('active');
+    }
+    </script>
 </body>
 </html>
