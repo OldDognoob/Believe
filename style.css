@@ -219,14 +219,7 @@ section .navigation li a:hover{
     }
     section .content h2 span{
         font-size: 0.25em;
-        font-weight: 300;
-        letter-spacing: 2px;
-        background: #fff;
-        color: #111;
         padding: 0 5px;
-        text-shadow: 0 5px 5px rgba(0,0,0,0);
-        box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-        text-transform: uppercase;
-
+        letter-spacing: 2px;
     }
 }
